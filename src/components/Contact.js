@@ -1,17 +1,15 @@
 
 import React from "react";
+import { useState } from "react";
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   function encode(data) {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&");
   }
 
   function handleSubmit(e) {
@@ -40,8 +38,8 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6739.088540078246!2d34.987960823180615!3d32.37776892437728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d113ad0c93a73%3A0x8397b034c2c8dfd7!2z15TXntei16TXmdec!5e0!3m2!1siw!2sil!4v1642455172955!5m2!1siw!2sil"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
+          <div className="bg-gray-900 w-fit relative flex flex-col flex-wrap py-6 pr-10 rounded shadow-md">
+            <div className="lg:w-full px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
@@ -49,11 +47,11 @@ export default function Contact() {
                Kibbutz Ham'mapil
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <div className="lg:w-full px-6 mt-4">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <a className="text-indigo-400 leading-relaxed" href="mailto:shiraneliyahu@icloud.com">
                 shiraneliyahu@icloud.com
               </a>
               {/* <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
