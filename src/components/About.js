@@ -8,12 +8,12 @@ export default function About() {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Shiran.
             <br className="hidden lg:inline-block" />
-              I love to build amazing apps.
+              Crafting Digital Experiences, One Line of Code at a Time
           </h1>
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+            Hello! I'm Shiran Eliyahu, a junior frontend developer passionate about building beautiful and intuitive websites.
+            From sleek designs to seamless user interfaces,
+            I bring simplicity and functionality together.
           </p>
           <div className="flex justify-center">
             <a
